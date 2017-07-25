@@ -1,0 +1,7 @@
+pwd
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php -f bin/magento indexer:reindex
+php bin/magento cache:clean
+php bin/magento cache:flush
+chmod -Rf 777 pub/ var/

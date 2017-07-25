@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul_Grid Menu
+ *
+ * @category    Webkul
+ * @package     Webkul_Grid
+ * @author      Webkul Software Private Limited
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Webkul_Grid::manager" title="Help Desk" module="Webkul_Grid" sortOrder="10" resource="Webkul_Grid::manager"/>
+        <add id="Webkul_Grid::add_row" title="Ewall Help Desk" module="Webkul_Grid" sortOrder="20" parent="Webkul_Grid::manager" action="grid/grid" resource="Webkul_Grid::add_row"/>
+        <add id="Webkul_Grid::tickets" title="Tickets" module="Webkul_Grid" sortOrder="30" parent="Webkul_Grid::manager" action="grid/tickets" resource="Webkul_Grid::tickets"/>
+    </menu>
+</config>

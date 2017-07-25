@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Ewall. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="ewall::base" title="Ewall" module="Ewall_HelpDisk" sortOrder="90" resource="Ewall_HelpDisk::sample"/>
+        <add id="ewall_helpdisk::helpdisk" title="Items" module="Ewall_HelpDisk" sortOrder="10" parent="ewall::base" action="ewall_helpdisk/items/" resource="Ewall_HelpDisk::items"/>
+    </menu>
+</config>
